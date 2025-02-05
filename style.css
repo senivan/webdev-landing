@@ -1,8 +1,14 @@
+
+/* Header of website */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    background-image: url('./img/bg.png');
+  background-size: cover;         /* Scale image to cover entire background */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;   /* Prevent tiling */
 }
 
 header {
@@ -69,3 +75,5 @@ header ul li .home{
     font-weight: 600;
     font-size: 16px;
 }
+
+/* home part */
