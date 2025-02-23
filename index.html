@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="graph-wrapper">
                 <p>Daily Calories</p>
                 <p>123 Cal</p>
                 <div class="bar-1"></div>
@@ -88,42 +88,62 @@
     </section>
     
     <section id="testimonials">
-        <h2>What Are People Saying About Us</h2>
-        <article>
-            <img src="img/avatar-1.png" alt="avatar-1">
-            <h3>Selena Gomz</h3>
-            <p>22 Years</p>
-            <p>The salad is fresh!!! Don’t ask about the sauce again, it’s really delicious...</p>
-        </article>
-        <article>
-            <img src="img/avatar-2.png" alt="avatar-2">
-            <h3>David Ken</h3>
-            <p>24 Years</p>
-            <p>The salad is fresh!!! Don’t ask about the sauce again, it’s really delicious...</p>
-        </article>
-        <article>
-            <img src="img/avatar-3.png" alt="avatar-3">
-            <h3>Jennifer Sina</h3>
-            <p>21 Years</p>
-            <p>The salad is fresh!!! Don’t ask about the sauce again, it’s really delicious...</p>
-        </article>
-    </section>
+        <div class="testimonials-container">
+          <!-- Left side: heading, sub-text, pagination -->
+          <div class="testimonials-info">
+            <h2>What Are People Saying About Us</h2>
+            <p>
+              We are very happy if you are satisfied with our service and products. 
+              Let’s read pure reviews from customers who bought our products.
+            </p>
+            <div class="pagination-controls">
+              <span class="page-number">02 / 05</span>
+              <button class="prev-button">&#8592;</button>
+              <button class="next-button">&#8594;</button>
+            </div>
+          </div>
+          <!-- Right side: testimonial cards -->
+          <div class="testimonial-cards">
+            <article>
+              <img src="img/avatar-1.png" alt="avatar-1">
+              <h3>Selena Gomz</h3>
+              <p class="age">22 Years</p>
+              <p>The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.</p>
+            </article>
+            <article>
+              <img src="img/avatar-2.png" alt="avatar-2">
+              <h3>David Ken</h3>
+              <p class="age">24 Years</p>
+              <p>The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.</p>
+            </article>
+            <article>
+                <img src="img/avatar-3.png" alt="avatar-3">
+                <h3>Jennifer Sina</h3>
+                <p class="age">21 Years</p>
+                <p>The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     
-    <section id="menu">
-        <h2>Enjoy The Best Menu And Get Discounts Available</h2>
-        <article class="card-with-img-bg">
+      <section id="menu" style="font-family: 'Poppins', sans-serif;">
+        <p style="font-weight: 500; font-size: 20px; color: #FB9333;">MENU YANG MEMBUATMU JATUH CINTA</p>
+        <h2>Enjoy The Best Menu And Get <span class="highlight">Discounts</span> Available</h2>
+        <div class="menu-cards">
+          <article class="card-with-img-bg" style="background-image: url('img/card-1.png');">
             <h3>Mini Salad Yummy</h3>
             <p>$2.99</p>
-        </article>
-        <article class="card-with-img-bg">
+          </article>
+          <article class="card-with-img-bg" style="background-image: url('img/card-2.png');">
             <h3>Completed Salad</h3>
             <p>$3.99</p>
-        </article>
-        <article class="card-with-img-bg">
+          </article>
+          <article class="card-with-img-bg" style="background-image: url('img/card-3.png');">
             <h3>Salad Yummy Red</h3>
             <p>$3.99</p>
-        </article>
-    </section>
+          </article>
+        </div>
+      </section>
     
     <section id="subscribe">
         <h2>Subscribe To Get The Latest Promo from Jez Salad</h2>
@@ -134,30 +154,37 @@
     </section>
     
     <footer>
-        <p>&copy; Copyright Jez Salad</p>
         <section>
-            <h3>Feature</h3>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#promo">Promo</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About Us</a></li>
-            </ul>
+          <h2><span class="highlight">JEZ</span> SALAD</h2>
+          <p>Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
+          <p>&copy; Copyright Jez Salad</p>
         </section>
         <section>
-            <h3>Get in Touch</h3>
-            <p>889 Ohio St. South Gate, CA 90280</p>
-            <p>Contact: ourstudio@hello.com</p>
-            <p>Phone: +1 386-688-3295</p>
+          <h3>Feature</h3>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
         </section>
+    
         <section>
-            <h3>Follow us on social media</h3>
-            <ul>
-                <li><a href="#twitter">Twitter</a></li>
-                <li><a href="#linkedin">LinkedIn</a></li>
-                <li><a href="#instagram">Instagram</a></li>
-            </ul>
+          <h3>Get in Touch</h3>
+          <p>889 Ohio St. South Gate, CA 90280</p>
+          <p>Contact: ourstudio@hello.com</p>
+          <p>Phone: +1 386-688-3295</p>
         </section>
-    </footer>
+    
+        <section>
+          <h3>Follow us on social media</h3>
+          <div class="social-media">
+            <a href="#twitter"><img src="img/twitter.png"></a>
+            <a href="#linkedin"><img src="img/linked.png"></a>
+            <a href="#instagram"><img src="img/instagram.png"></a>
+          </div>
+        </section>
+      </footer>
 </body>
 </html>
+
